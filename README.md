@@ -16,7 +16,7 @@ Examples: the Python http.server module, npx serve, or nginx.
 
 1. Push this repo (or this folder as the repo root / docs).
 2. Settings, Pages, Deploy from branch, root (or /docs).
-3. Three.js loads from esm.sh via import map — no package install needed on Pages.
+3. Three.js r170 is vendored under vendor/three (import map); works over HTTP without CDN.
 
 Keep relative paths (./js/, ./data/) if hosting under a subpath.
 
@@ -34,7 +34,8 @@ Keep relative paths (./js/, ./data/) if hosting under a subpath.
 ## Project layout
 
     terra-pantry/
-    ├── index.html          # importmap to three@0.170 from esm.sh
+    ├── index.html          # importmap to vendored three@0.170
+    ├── vendor/three/       # three.module.js + OrbitControls
     ├── favicon.svg
     ├── css/styles.css
     ├── js/
@@ -93,7 +94,7 @@ Sketch for multi-file load:
 
 ## Stack
 
-- Three.js r170 (CDN via esm.sh import map)
+- Three.js r170 (vendored under vendor/three; import map)
 - OrbitControls from three/addons
 - Vanilla ES modules — no bundler required
 
