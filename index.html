@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Terra Pantry — interactive climate & food atlas of the Balkans and Mediterranean (draft encyclopedia)."
+    />
+    <title>Terra Pantry · Balkans & Mediterranean</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://esm.sh/three@0.170.0",
+          "three/addons/": "https://esm.sh/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="canvas-host" aria-label="3D map of Mediterranean and Balkan regions"></div>
+
+      <header id="landing">
+        <h1>Terra <span>Pantry</span></h1>
+        <p class="subtitle">
+          Climate &amp; food of the Balkans and Mediterranean — draft encyclopedia
+        </p>
+        <div id="controls-hint">
+          <span class="hint-chip">Drag to orbit</span>
+          <span class="hint-chip">Scroll to zoom</span>
+          <span class="hint-chip">Click a region</span>
+        </div>
+      </header>
+
+      <div id="hover-label" aria-live="polite"></div>
+
+      <aside id="region-panel" aria-hidden="true" role="dialog" aria-labelledby="panel-title">
+        <div class="panel-header">
+          <h2 id="panel-title">Region</h2>
+          <button id="panel-close" type="button" aria-label="Close panel">×</button>
+        </div>
+        <div id="panel-content"></div>
+      </aside>
+
+      <footer id="draft-footer">
+        <strong>Draft</strong> encyclopedia · curated notes · extend via REGION_REGISTRY
+      </footer>
+
+      <div id="loading">
+        <div class="loader-ring" aria-hidden="true"></div>
+        <p>Loading atlas…</p>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
