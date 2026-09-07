@@ -9,19 +9,16 @@
     />
     <title>Terra Pantry · Balkans & Mediterranean</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "./vendor/three/three.module.js",
-          "three/addons/": "./vendor/three/addons/"
-        }
-      }
-    </script>
+    <script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
   </head>
   <body>
     <div id="app">
-      <div id="canvas-host" aria-label="3D map of Mediterranean and Balkan regions"></div>
+      <div id="map" role="application" aria-label="Map atlas of Mediterranean and Balkan regions"></div>
 
       <header id="landing">
         <h1>Terra <span>Pantry</span></h1>
@@ -29,7 +26,7 @@
           Climate &amp; food of the Balkans and Mediterranean — draft encyclopedia
         </p>
         <div id="controls-hint">
-          <span class="hint-chip">Drag to orbit</span>
+          <span class="hint-chip">Drag to pan</span>
           <span class="hint-chip">Scroll to zoom</span>
           <span class="hint-chip">Click a region</span>
         </div>

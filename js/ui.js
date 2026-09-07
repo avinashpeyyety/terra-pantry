@@ -30,12 +30,16 @@ export function showRegion(region) {
 
   const climate = region.climate || {};
   const food = region.food || {};
+  const band = region.climateBand
+    ? `<span class="band-pill">${escapeHtml(region.climateBand)}</span>`
+    : '';
   const ingredients = (food.ingredients || []).map((i) => `<li>${escapeHtml(i)}</li>`).join('');
   const dishes = (food.dishes || []).map((d) => `<span class="chip">${escapeHtml(d)}</span>`).join('');
 
   contentEl.innerHTML = `
     <section class="panel-section">
       <h3 class="section-label">Climate</h3>
+      ${band}
       <dl class="fact-list">
         <div><dt>Köppen-ish</dt><dd>${escapeHtml(climate.koppen || '—')}</dd></div>
         <div><dt>Summer</dt><dd>${escapeHtml(climate.summerTemp || '—')}</dd></div>
@@ -66,12 +70,20 @@ export function hidePanel() {
   onCloseCb?.();
 }
 
-export function setHoverLabel(name) {
+/**
+ * @param {string|null} name
+ * @param {{x:number,y:number}|null} point map pixel point for cursor-follow label
+ */
+export function setHoverLabel(name, point = null) {
   const el = document.getElementById('hover-label');
   if (!el) return;
   if (name) {
     el.textContent = name;
     el.classList.add('visible');
+    if (point) {
+      el.style.left = `${point.x}px`;
+      el.style.top = `${point.y}px`;
+    }
   } else {
     el.classList.remove('visible');
   }

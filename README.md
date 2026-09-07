@@ -2,102 +2,128 @@
 
 Interactive climate and food atlas of the Balkans and Mediterranean — a draft encyclopedia designed to expand into a zoomable world pantry map.
 
-Warm earth / olive / Aegean aesthetic. Static Three.js site (no build step).
+Warm earth / olive / Aegean aesthetic on a real geographic basemap (MapLibre GL JS + OpenFreeMap). Static site — no build step, no Mapbox token.
 
 ## Quick start
 
-Serve the folder over HTTP (ES modules and fetch require a local static server, not file://).
+Serve the folder over HTTP (ES modules and `fetch` require a local static server, **not** `file://`).
 
-From this directory, run a static file server on port 8080, then open http://localhost:8080
+```bash
+cd terra-pantry
+python3 -m http.server 8080
+```
 
-Examples: the Python http.server module, npx serve, or nginx.
+Open http://127.0.0.1:8080
+
+Also fine: `npx serve`, nginx, or GitHub Pages.
 
 ## GitHub Pages
 
-1. Push this repo (or this folder as the repo root / docs).
-2. Settings, Pages, Deploy from branch, root (or /docs).
-3. Three.js r170 is vendored under vendor/three (import map); works over HTTP without CDN.
+1. Push this repo (or this folder as the repo root / `docs`).
+2. Settings → Pages → Deploy from branch → root (or `/docs`).
+3. MapLibre loads from CDN (`unpkg.com/maplibre-gl`); basemap tiles from OpenFreeMap (no API key).
 
-Keep relative paths (./js/, ./data/) if hosting under a subpath.
+Keep relative paths (`./js/`, `./data/`) if hosting under a subpath.
 
 ## Controls
 
 | Action | Result |
 |--------|--------|
-| Drag | Orbit camera |
+| Drag | Pan map |
 | Scroll | Zoom |
 | Hover region | Highlight + name label |
-| Click region | Side panel (climate + food) + camera frame |
+| Click region | Side panel (climate + food) + fitBounds |
 | Esc / close | Close panel, reset framing |
-| Click ocean / empty | Deselect |
+| Click empty map | Deselect |
 
 ## Project layout
 
-    terra-pantry/
-    ├── index.html          # importmap to vendored three@0.170
-    ├── vendor/three/       # three.module.js + OrbitControls
-    ├── favicon.svg
-    ├── css/styles.css
-    ├── js/
-    │   ├── main.js         # scene, lights, raycast, loop
-    │   ├── map.js          # extruded regions, REGION_REGISTRY
-    │   ├── camera.js       # lon/lat projection + framing
-    │   └── ui.js           # side panel / hover label
-    ├── data/regions.json   # climate + food + outlines
-    └── README.md
+```
+terra-pantry/
+├── index.html              # MapLibre CSS/JS CDN + app shell
+├── favicon.svg
+├── css/styles.css
+├── js/
+│   ├── main.js             # load data, wire map + UI
+│   ├── map.js              # MapLibre layers, REGION_REGISTRY, fitBounds
+│   └── ui.js               # side panel / hover label
+├── data/
+│   ├── regions.json        # climate + food copy, meta, bounds
+│   └── regions.geojson     # FeatureCollection polygons (17 regions)
+└── README.md
+```
 
-## Data model (data/regions.json)
+## Data model
+
+### `data/regions.json`
 
 Each region:
 
-- id, name, shortName, color, highlight
-- bounds — camera framing box (minLon/maxLon/minLat/maxLat)
-- outline — simplified lon/lat ring (closed polygon)
-- extrudeHeight — relative 3D thickness
-- climate — Koppen-ish zone, summer/winter bands, rainfall note
-- food — ingredients, dishes, agriculture note
+- `id`, `name`, `shortName`, `color`, `highlight`
+- `climateBand` — mediterranean | continental | humid-subtropical | semi-arid | mixed | alpine
+- `bounds` — `{ minLon, maxLon, minLat, maxLat }` for click framing
+- `outline` — simplified lon/lat ring (source for GeoJSON; kept for editing)
+- `climate` — Köppen-ish zone, summer/winter bands, rainfall note
+- `food` — ingredients, dishes, agriculture note
 
-Facts are curated draft encyclopedia notes — honest summaries, not exhaustive.
+`meta.map` holds default `center`, `zoom`, and overview `bounds`.
+
+### `data/regions.geojson`
+
+Polygon FeatureCollection. Feature `properties.id` matches `regions.json`. Fill color prefers `properties.color`, with `climateBand` as fallback.
+
+Facts are curated draft encyclopedia notes — honest summaries, not exhaustive. Outlines are schematic, not survey-grade.
 
 ## Extension hooks
 
 ### REGION_REGISTRY
 
-In js/map.js, every built mesh is registered:
+Every region is registered after load:
 
-    import { REGION_REGISTRY } from './map.js';
-    REGION_REGISTRY.get('greece'); // { id, mesh, data, bounds }
+```js
+import { REGION_REGISTRY } from './map.js';
+REGION_REGISTRY.get('greece'); // { id, data, bounds, feature }
+```
 
-Use this to attach tools, filters, or multi-select without rewriting the map builder.
+Also available as `window.TERRA_PANTRY.REGION_REGISTRY` in the browser console.
 
 ### Camera framing
 
-    import { frameBounds, frameAtlas } from './camera.js';
-    frameBounds(camera, controls, region.bounds, projection, { padding: 1.5, duration: 800 });
+```js
+import { fitFocus, fitRegion, fitWorld } from './map.js';
+fitRegion(map, entry.bounds, { panelOpen: true });
+fitWorld(map);   // later: world encyclopedia overview
+fitFocus(map, meta);
+```
 
 ### Adding a continent
 
-1. Data — Add region objects to data/regions.json (or a new file such as data/regions-asia.json merged at load time in main.js).
-2. Projection — For a distant continent, either shift meta.projection.centerLon/centerLat toward the new focus, keep the Med center and accept long travel, or introduce continent groups with their own projection and overview bounds.
-3. Outlines — Provide simplified lon/lat polygons (GeoJSON exterior rings). Prefer 10–40 points per country for performance.
-4. Registry — Meshes auto-register on buildMap(). Optional: namespace ids (asia:japan) and filter UI by prefix.
-5. Camera — Set per-region bounds so click-to-frame works. Add a continent overview control that calls frameBounds with the continent bbox.
-6. Aesthetic — Reuse palette tokens in css/styles.css; region color/highlight stay in JSON.
+1. **GeoJSON** — Add polygons to `data/regions.geojson` (or a new file such as `data/regions-asia.geojson`). Prefer 10–40 points per country.
+2. **Copy** — Add matching climate/food objects to `data/regions.json` (same `id`).
+3. **Load** — In `main.js`, fetch the extra GeoJSON and either merge features before `addRegionLayers`, or call `mergeRegionGeoJSON(map, extra)` after.
+4. **Registry** — `buildRegistry()` already indexes every `regions.json` entry; ensure ids match.
+5. **Framing** — Keep per-region `bounds`. For a world overview button, call `fitWorld(map)`.
+6. **Aesthetic** — Reuse palette tokens in `css/styles.css`; region `color` / `highlight` stay in JSON.
 
 Sketch for multi-file load:
 
-    const [med, asia] = await Promise.all([
-      fetch('./data/regions.json').then((r) => r.json()),
-      fetch('./data/regions-asia.json').then((r) => r.json()),
-    ]);
-    const data = { meta: med.meta, regions: [...med.regions, ...asia.regions] };
+```js
+const [med, asia] = await Promise.all([
+  fetch('./data/regions.geojson').then((r) => r.json()),
+  fetch('./data/regions-asia.geojson').then((r) => r.json()),
+]);
+const geojson = {
+  type: 'FeatureCollection',
+  features: [...med.features, ...asia.features],
+};
+```
 
 ## Stack
 
-- Three.js r170 (vendored under vendor/three; import map)
-- OrbitControls from three/addons
+- [MapLibre GL JS](https://maplibre.org/) v5 (CDN)
+- [OpenFreeMap](https://openfreemap.org/) dark style — free tiles, no API key
 - Vanilla ES modules — no bundler required
 
 ## License
 
-Draft content and code for personal / educational use. Country outlines are schematic, not survey-grade.
+Draft content and code for personal / educational use. Country outlines are schematic, not survey-grade. Basemap © OpenFreeMap / OpenStreetMap contributors.

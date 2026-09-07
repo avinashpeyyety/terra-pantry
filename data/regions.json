@@ -8,6 +8,20 @@
       "centerLon": 20.5,
       "centerLat": 41.5,
       "scale": 42000
+    },
+    "basemap": "openfreemap-dark",
+    "map": {
+      "center": [
+        20.5,
+        41.5
+      ],
+      "zoom": 5.2,
+      "bounds": [
+        -2.5,
+        34.0,
+        35.5,
+        48.5
+      ]
     }
   },
   "regions": [
@@ -17,28 +31,171 @@
       "shortName": "Greece",
       "color": "#c4a574",
       "highlight": "#e8d4a8",
-      "bounds": { "minLon": 19.3, "maxLon": 28.3, "minLat": 34.8, "maxLat": 41.8 },
+      "bounds": {
+        "minLon": 19.3,
+        "maxLon": 28.3,
+        "minLat": 34.8,
+        "maxLat": 41.8
+      },
       "outline": [
-        [19.4, 39.7], [20.0, 39.0], [20.7, 38.3], [21.2, 37.6], [22.0, 36.8],
-        [22.5, 36.4], [23.0, 36.2], [23.7, 36.5], [24.1, 37.0], [24.5, 37.8],
-        [25.0, 38.2], [25.5, 38.0], [26.2, 37.5], [26.8, 37.0], [27.2, 36.5],
-        [27.8, 36.2], [28.0, 36.5], [27.5, 37.2], [27.0, 37.8], [26.5, 38.5],
-        [26.0, 39.0], [25.5, 39.5], [24.8, 40.0], [24.0, 40.5], [23.5, 40.8],
-        [22.8, 41.0], [22.0, 41.2], [21.5, 41.0], [21.0, 40.8], [20.5, 40.5],
-        [20.0, 40.2], [19.6, 39.9], [19.4, 39.7]
+        [
+          19.4,
+          39.7
+        ],
+        [
+          20.0,
+          39.0
+        ],
+        [
+          20.7,
+          38.3
+        ],
+        [
+          21.2,
+          37.6
+        ],
+        [
+          22.0,
+          36.8
+        ],
+        [
+          22.5,
+          36.4
+        ],
+        [
+          23.0,
+          36.2
+        ],
+        [
+          23.7,
+          36.5
+        ],
+        [
+          24.1,
+          37.0
+        ],
+        [
+          24.5,
+          37.8
+        ],
+        [
+          25.0,
+          38.2
+        ],
+        [
+          25.5,
+          38.0
+        ],
+        [
+          26.2,
+          37.5
+        ],
+        [
+          26.8,
+          37.0
+        ],
+        [
+          27.2,
+          36.5
+        ],
+        [
+          27.8,
+          36.2
+        ],
+        [
+          28.0,
+          36.5
+        ],
+        [
+          27.5,
+          37.2
+        ],
+        [
+          27.0,
+          37.8
+        ],
+        [
+          26.5,
+          38.5
+        ],
+        [
+          26.0,
+          39.0
+        ],
+        [
+          25.5,
+          39.5
+        ],
+        [
+          24.8,
+          40.0
+        ],
+        [
+          24.0,
+          40.5
+        ],
+        [
+          23.5,
+          40.8
+        ],
+        [
+          22.8,
+          41.0
+        ],
+        [
+          22.0,
+          41.2
+        ],
+        [
+          21.5,
+          41.0
+        ],
+        [
+          21.0,
+          40.8
+        ],
+        [
+          20.5,
+          40.5
+        ],
+        [
+          20.0,
+          40.2
+        ],
+        [
+          19.6,
+          39.9
+        ],
+        [
+          19.4,
+          39.7
+        ]
       ],
-      "extrudeHeight": 0.35,
       "climate": {
         "koppen": "Csa / Csb (Mediterranean)",
-        "summerTemp": "28–35 °C coastal; hotter inland",
-        "winterTemp": "5–15 °C; mild wet winters",
+        "summerTemp": "28\u201335 \u00b0C coastal; hotter inland",
+        "winterTemp": "5\u201315 \u00b0C; mild wet winters",
         "rainfall": "Winter-dominant rains; dry summers. Mountains wetter; islands more arid."
       },
       "food": {
-        "ingredients": ["olive oil", "feta", "oregano", "lemon", "lamb", "seafood"],
-        "dishes": ["moussaka", "souvlaki", "spanakopita", "avgolemono", "Greek salad"],
+        "ingredients": [
+          "olive oil",
+          "feta",
+          "oregano",
+          "lemon",
+          "lamb",
+          "seafood"
+        ],
+        "dishes": [
+          "moussaka",
+          "souvlaki",
+          "spanakopita",
+          "avgolemono",
+          "Greek salad"
+        ],
         "agriculture": "Olives, grapes, citrus, and sheep dominate. Island herbs and Aegean fish define coastal tables."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "albania",
@@ -46,25 +203,103 @@
       "shortName": "Albania",
       "color": "#a8b87a",
       "highlight": "#d4e0a8",
-      "bounds": { "minLon": 19.2, "maxLon": 21.1, "minLat": 39.6, "maxLat": 42.7 },
+      "bounds": {
+        "minLon": 19.2,
+        "maxLon": 21.1,
+        "minLat": 39.6,
+        "maxLat": 42.7
+      },
       "outline": [
-        [19.3, 41.9], [19.5, 41.3], [19.8, 40.7], [20.0, 40.2], [20.2, 39.8],
-        [20.5, 39.7], [20.8, 40.0], [21.0, 40.5], [20.9, 41.0], [20.7, 41.5],
-        [20.5, 42.0], [20.3, 42.4], [20.0, 42.6], [19.6, 42.5], [19.4, 42.2],
-        [19.3, 41.9]
+        [
+          19.3,
+          41.9
+        ],
+        [
+          19.5,
+          41.3
+        ],
+        [
+          19.8,
+          40.7
+        ],
+        [
+          20.0,
+          40.2
+        ],
+        [
+          20.2,
+          39.8
+        ],
+        [
+          20.5,
+          39.7
+        ],
+        [
+          20.8,
+          40.0
+        ],
+        [
+          21.0,
+          40.5
+        ],
+        [
+          20.9,
+          41.0
+        ],
+        [
+          20.7,
+          41.5
+        ],
+        [
+          20.5,
+          42.0
+        ],
+        [
+          20.3,
+          42.4
+        ],
+        [
+          20.0,
+          42.6
+        ],
+        [
+          19.6,
+          42.5
+        ],
+        [
+          19.4,
+          42.2
+        ],
+        [
+          19.3,
+          41.9
+        ]
       ],
-      "extrudeHeight": 0.32,
       "climate": {
         "koppen": "Csa coastal; Cfb / Dfb mountains",
-        "summerTemp": "25–33 °C on Adriatic coast",
-        "winterTemp": "5–12 °C coast; colder inland Alps",
+        "summerTemp": "25\u201333 \u00b0C on Adriatic coast",
+        "winterTemp": "5\u201312 \u00b0C coast; colder inland Alps",
         "rainfall": "Wet winters on coast; alpine snow inland. Summer relatively dry."
       },
       "food": {
-        "ingredients": ["olive oil", "peppers", "lamb", "byrek pastry", "fresh cheese", "tomatoes"],
-        "dishes": ["byrek", "tavë kosi", "fërgesë", "qofte", "speca të mbushura"],
+        "ingredients": [
+          "olive oil",
+          "peppers",
+          "lamb",
+          "byrek pastry",
+          "fresh cheese",
+          "tomatoes"
+        ],
+        "dishes": [
+          "byrek",
+          "tav\u00eb kosi",
+          "f\u00ebrges\u00eb",
+          "qofte",
+          "speca t\u00eb mbushura"
+        ],
         "agriculture": "Olives and citrus on the coast; mountain pastures for sheep and dairy; peppers and tomatoes inland."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "north-macedonia",
@@ -72,24 +307,91 @@
       "shortName": "N. Macedonia",
       "color": "#b8956a",
       "highlight": "#e0c898",
-      "bounds": { "minLon": 20.4, "maxLon": 23.0, "minLat": 40.8, "maxLat": 42.4 },
+      "bounds": {
+        "minLon": 20.4,
+        "maxLon": 23.0,
+        "minLat": 40.8,
+        "maxLat": 42.4
+      },
       "outline": [
-        [20.5, 41.5], [20.7, 41.0], [21.0, 40.9], [21.5, 41.0], [22.0, 41.1],
-        [22.5, 41.2], [22.9, 41.5], [22.8, 42.0], [22.4, 42.3], [21.8, 42.3],
-        [21.2, 42.2], [20.7, 42.0], [20.5, 41.5]
+        [
+          20.5,
+          41.5
+        ],
+        [
+          20.7,
+          41.0
+        ],
+        [
+          21.0,
+          40.9
+        ],
+        [
+          21.5,
+          41.0
+        ],
+        [
+          22.0,
+          41.1
+        ],
+        [
+          22.5,
+          41.2
+        ],
+        [
+          22.9,
+          41.5
+        ],
+        [
+          22.8,
+          42.0
+        ],
+        [
+          22.4,
+          42.3
+        ],
+        [
+          21.8,
+          42.3
+        ],
+        [
+          21.2,
+          42.2
+        ],
+        [
+          20.7,
+          42.0
+        ],
+        [
+          20.5,
+          41.5
+        ]
       ],
-      "extrudeHeight": 0.30,
       "climate": {
         "koppen": "Cfa / Dfb (continental Mediterranean transition)",
-        "summerTemp": "25–35 °C in valleys",
-        "winterTemp": "-5–5 °C; snow in mountains",
+        "summerTemp": "25\u201335 \u00b0C in valleys",
+        "winterTemp": "-5\u20135 \u00b0C; snow in mountains",
         "rainfall": "Moderate; spring and autumn peaks. Lakes moderate local climate."
       },
       "food": {
-        "ingredients": ["peppers", "ajvar", "beans", "lamb", "white cheese", "wine grapes"],
-        "dishes": ["tavče gravče", "ajvar", "kebapi", "shopska salad", "pastrmajlija"],
-        "agriculture": "Peppers for ajvar, vineyards around Tikveš, lake fish, and highland sheep dairy."
-      }
+        "ingredients": [
+          "peppers",
+          "ajvar",
+          "beans",
+          "lamb",
+          "white cheese",
+          "wine grapes"
+        ],
+        "dishes": [
+          "tav\u010de grav\u010de",
+          "ajvar",
+          "kebapi",
+          "shopska salad",
+          "pastrmajlija"
+        ],
+        "agriculture": "Peppers for ajvar, vineyards around Tikve\u0161, lake fish, and highland sheep dairy."
+      },
+      "climateBand": "humid-subtropical"
     },
     {
       "id": "serbia",
@@ -97,25 +399,111 @@
       "shortName": "Serbia",
       "color": "#9a8b6e",
       "highlight": "#c8b898",
-      "bounds": { "minLon": 18.8, "maxLon": 23.0, "minLat": 42.2, "maxLat": 46.2 },
+      "bounds": {
+        "minLon": 18.8,
+        "maxLon": 23.0,
+        "minLat": 42.2,
+        "maxLat": 46.2
+      },
       "outline": [
-        [18.9, 45.9], [19.5, 46.1], [20.5, 46.0], [21.5, 45.5], [22.5, 45.0],
-        [22.8, 44.5], [22.7, 43.8], [22.5, 43.2], [22.0, 42.6], [21.5, 42.4],
-        [21.0, 42.5], [20.5, 42.8], [20.0, 43.2], [19.5, 43.5], [19.2, 44.0],
-        [19.0, 44.5], [18.9, 45.2], [18.9, 45.9]
+        [
+          18.9,
+          45.9
+        ],
+        [
+          19.5,
+          46.1
+        ],
+        [
+          20.5,
+          46.0
+        ],
+        [
+          21.5,
+          45.5
+        ],
+        [
+          22.5,
+          45.0
+        ],
+        [
+          22.8,
+          44.5
+        ],
+        [
+          22.7,
+          43.8
+        ],
+        [
+          22.5,
+          43.2
+        ],
+        [
+          22.0,
+          42.6
+        ],
+        [
+          21.5,
+          42.4
+        ],
+        [
+          21.0,
+          42.5
+        ],
+        [
+          20.5,
+          42.8
+        ],
+        [
+          20.0,
+          43.2
+        ],
+        [
+          19.5,
+          43.5
+        ],
+        [
+          19.2,
+          44.0
+        ],
+        [
+          19.0,
+          44.5
+        ],
+        [
+          18.9,
+          45.2
+        ],
+        [
+          18.9,
+          45.9
+        ]
       ],
-      "extrudeHeight": 0.28,
       "climate": {
         "koppen": "Cfb / Dfb (humid continental)",
-        "summerTemp": "22–32 °C",
-        "winterTemp": "-5–5 °C; cold snaps common",
+        "summerTemp": "22\u201332 \u00b0C",
+        "winterTemp": "-5\u20135 \u00b0C; cold snaps common",
         "rainfall": "Fairly even year-round; thunderstorms in summer."
       },
       "food": {
-        "ingredients": ["pork", "peppers", "kajmak", "plum", "cabbage", "cornmeal"],
-        "dishes": ["ćevapi", "pljeskavica", "sarma", "gibanica", "ajvar"],
+        "ingredients": [
+          "pork",
+          "peppers",
+          "kajmak",
+          "plum",
+          "cabbage",
+          "cornmeal"
+        ],
+        "dishes": [
+          "\u0107evapi",
+          "pljeskavica",
+          "sarma",
+          "gibanica",
+          "ajvar"
+        ],
         "agriculture": "Danube plains for grains and pigs; plums for rakija; paprika and cabbage staples."
-      }
+      },
+      "climateBand": "continental"
     },
     {
       "id": "kosovo",
@@ -123,24 +511,83 @@
       "shortName": "Kosovo",
       "color": "#b8a078",
       "highlight": "#e0c8a0",
-      "bounds": { "minLon": 20.0, "maxLon": 21.8, "minLat": 41.8, "maxLat": 43.3 },
+      "bounds": {
+        "minLon": 20.0,
+        "maxLon": 21.8,
+        "minLat": 41.8,
+        "maxLat": 43.3
+      },
       "outline": [
-        [20.1, 42.7], [20.3, 42.2], [20.6, 41.9], [21.0, 42.0], [21.4, 42.2],
-        [21.7, 42.5], [21.6, 42.9], [21.3, 43.2], [20.8, 43.2], [20.3, 43.0],
-        [20.1, 42.7]
+        [
+          20.1,
+          42.7
+        ],
+        [
+          20.3,
+          42.2
+        ],
+        [
+          20.6,
+          41.9
+        ],
+        [
+          21.0,
+          42.0
+        ],
+        [
+          21.4,
+          42.2
+        ],
+        [
+          21.7,
+          42.5
+        ],
+        [
+          21.6,
+          42.9
+        ],
+        [
+          21.3,
+          43.2
+        ],
+        [
+          20.8,
+          43.2
+        ],
+        [
+          20.3,
+          43.0
+        ],
+        [
+          20.1,
+          42.7
+        ]
       ],
-      "extrudeHeight": 0.33,
       "climate": {
         "koppen": "Cfb / Dfb (continental highland)",
-        "summerTemp": "20–30 °C",
-        "winterTemp": "-8–2 °C; snowy winters",
+        "summerTemp": "20\u201330 \u00b0C",
+        "winterTemp": "-8\u20132 \u00b0C; snowy winters",
         "rainfall": "Moderate; snow cover in mountains much of winter."
       },
       "food": {
-        "ingredients": ["flia batter", "dairy", "peppers", "lamb", "beans", "corn"],
-        "dishes": ["flia", "pite", "qebapa", "speca me gjizë", "tavë"],
+        "ingredients": [
+          "flia batter",
+          "dairy",
+          "peppers",
+          "lamb",
+          "beans",
+          "corn"
+        ],
+        "dishes": [
+          "flia",
+          "pite",
+          "qebapa",
+          "speca me gjiz\u00eb",
+          "tav\u00eb"
+        ],
         "agriculture": "Highland pastures, dairy, peppers, and grains. Flia is a cultural signature."
-      }
+      },
+      "climateBand": "continental"
     },
     {
       "id": "montenegro",
@@ -148,24 +595,87 @@
       "shortName": "Montenegro",
       "color": "#7a9a8a",
       "highlight": "#a8c8b8",
-      "bounds": { "minLon": 18.4, "maxLon": 20.4, "minLat": 41.8, "maxLat": 43.6 },
+      "bounds": {
+        "minLon": 18.4,
+        "maxLon": 20.4,
+        "minLat": 41.8,
+        "maxLat": 43.6
+      },
       "outline": [
-        [18.5, 42.5], [18.6, 42.1], [18.9, 41.9], [19.3, 42.0], [19.7, 42.2],
-        [20.1, 42.5], [20.3, 43.0], [20.0, 43.4], [19.5, 43.5], [19.0, 43.3],
-        [18.7, 43.0], [18.5, 42.5]
+        [
+          18.5,
+          42.5
+        ],
+        [
+          18.6,
+          42.1
+        ],
+        [
+          18.9,
+          41.9
+        ],
+        [
+          19.3,
+          42.0
+        ],
+        [
+          19.7,
+          42.2
+        ],
+        [
+          20.1,
+          42.5
+        ],
+        [
+          20.3,
+          43.0
+        ],
+        [
+          20.0,
+          43.4
+        ],
+        [
+          19.5,
+          43.5
+        ],
+        [
+          19.0,
+          43.3
+        ],
+        [
+          18.7,
+          43.0
+        ],
+        [
+          18.5,
+          42.5
+        ]
       ],
-      "extrudeHeight": 0.40,
       "climate": {
         "koppen": "Csa coast; Dfb inland mountains",
-        "summerTemp": "28–35 °C Adriatic; cooler highlands",
-        "winterTemp": "8–14 °C coast; freezing inland",
+        "summerTemp": "28\u201335 \u00b0C Adriatic; cooler highlands",
+        "winterTemp": "8\u201314 \u00b0C coast; freezing inland",
         "rainfall": "Very wet on coast in winter; alpine snow inland."
       },
       "food": {
-        "ingredients": ["seafood", "olive oil", "prosciutto", "cheese", "wine", "wild herbs"],
-        "dishes": ["Njeguški pršut", "riblja čorba", "kačamak", "japraci", "crmničko wine"],
+        "ingredients": [
+          "seafood",
+          "olive oil",
+          "prosciutto",
+          "cheese",
+          "wine",
+          "wild herbs"
+        ],
+        "dishes": [
+          "Njegu\u0161ki pr\u0161ut",
+          "riblja \u010dorba",
+          "ka\u010damak",
+          "japraci",
+          "crmni\u010dko wine"
+        ],
         "agriculture": "Coastal olives and vines; mountain smoked meats and dairy; Bay of Kotor seafood."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "bosnia",
@@ -173,24 +683,99 @@
       "shortName": "Bosnia & Herzegovina",
       "color": "#8a9a7a",
       "highlight": "#b8c8a8",
-      "bounds": { "minLon": 15.7, "maxLon": 19.7, "minLat": 42.5, "maxLat": 45.3 },
+      "bounds": {
+        "minLon": 15.7,
+        "maxLon": 19.7,
+        "minLat": 42.5,
+        "maxLat": 45.3
+      },
       "outline": [
-        [15.8, 44.9], [16.5, 45.2], [17.5, 45.1], [18.5, 44.9], [19.3, 44.5],
-        [19.5, 44.0], [19.4, 43.5], [19.0, 43.0], [18.5, 42.7], [17.8, 42.6],
-        [17.2, 42.8], [16.5, 43.2], [16.0, 43.8], [15.8, 44.3], [15.8, 44.9]
+        [
+          15.8,
+          44.9
+        ],
+        [
+          16.5,
+          45.2
+        ],
+        [
+          17.5,
+          45.1
+        ],
+        [
+          18.5,
+          44.9
+        ],
+        [
+          19.3,
+          44.5
+        ],
+        [
+          19.5,
+          44.0
+        ],
+        [
+          19.4,
+          43.5
+        ],
+        [
+          19.0,
+          43.0
+        ],
+        [
+          18.5,
+          42.7
+        ],
+        [
+          17.8,
+          42.6
+        ],
+        [
+          17.2,
+          42.8
+        ],
+        [
+          16.5,
+          43.2
+        ],
+        [
+          16.0,
+          43.8
+        ],
+        [
+          15.8,
+          44.3
+        ],
+        [
+          15.8,
+          44.9
+        ]
       ],
-      "extrudeHeight": 0.34,
       "climate": {
         "koppen": "Cfb / Dfb; Csa in Herzegovina",
-        "summerTemp": "22–32 °C",
-        "winterTemp": "-5–5 °C north; milder Herzegovina",
+        "summerTemp": "22\u201332 \u00b0C",
+        "winterTemp": "-5\u20135 \u00b0C north; milder Herzegovina",
         "rainfall": "Year-round; heavy snow in Dinaric Alps."
       },
       "food": {
-        "ingredients": ["lamb", "kaymak", "somun bread", "peppers", "plums", "coffee culture"],
-        "dishes": ["ćevapi", "burek", "begova čorba", "klepe", "tufahije"],
+        "ingredients": [
+          "lamb",
+          "kaymak",
+          "somun bread",
+          "peppers",
+          "plums",
+          "coffee culture"
+        ],
+        "dishes": [
+          "\u0107evapi",
+          "burek",
+          "begova \u010dorba",
+          "klepe",
+          "tufahije"
+        ],
         "agriculture": "Mountain pastures, plum orchards, and Herzegovina vineyards; Ottoman-Balkan kitchen heritage."
-      }
+      },
+      "climateBand": "mixed"
     },
     {
       "id": "croatia",
@@ -198,26 +783,135 @@
       "shortName": "Croatia",
       "color": "#7a8aaa",
       "highlight": "#a8b8d0",
-      "bounds": { "minLon": 13.5, "maxLon": 19.5, "minLat": 42.3, "maxLat": 46.6 },
+      "bounds": {
+        "minLon": 13.5,
+        "maxLon": 19.5,
+        "minLat": 42.3,
+        "maxLat": 46.6
+      },
       "outline": [
-        [13.6, 45.5], [14.0, 45.2], [14.5, 44.8], [15.0, 44.2], [15.5, 43.6],
-        [16.0, 43.2], [16.5, 43.0], [17.0, 42.8], [17.5, 42.6], [18.0, 42.5],
-        [18.5, 42.6], [18.8, 43.0], [18.5, 43.5], [18.0, 44.0], [17.5, 44.5],
-        [17.0, 45.0], [16.5, 45.5], [16.0, 45.8], [15.5, 46.2], [15.0, 46.5],
-        [14.5, 46.4], [14.0, 46.0], [13.7, 45.7], [13.6, 45.5]
+        [
+          13.6,
+          45.5
+        ],
+        [
+          14.0,
+          45.2
+        ],
+        [
+          14.5,
+          44.8
+        ],
+        [
+          15.0,
+          44.2
+        ],
+        [
+          15.5,
+          43.6
+        ],
+        [
+          16.0,
+          43.2
+        ],
+        [
+          16.5,
+          43.0
+        ],
+        [
+          17.0,
+          42.8
+        ],
+        [
+          17.5,
+          42.6
+        ],
+        [
+          18.0,
+          42.5
+        ],
+        [
+          18.5,
+          42.6
+        ],
+        [
+          18.8,
+          43.0
+        ],
+        [
+          18.5,
+          43.5
+        ],
+        [
+          18.0,
+          44.0
+        ],
+        [
+          17.5,
+          44.5
+        ],
+        [
+          17.0,
+          45.0
+        ],
+        [
+          16.5,
+          45.5
+        ],
+        [
+          16.0,
+          45.8
+        ],
+        [
+          15.5,
+          46.2
+        ],
+        [
+          15.0,
+          46.5
+        ],
+        [
+          14.5,
+          46.4
+        ],
+        [
+          14.0,
+          46.0
+        ],
+        [
+          13.7,
+          45.7
+        ],
+        [
+          13.6,
+          45.5
+        ]
       ],
-      "extrudeHeight": 0.30,
       "climate": {
         "koppen": "Csa Dalmatia; Cfb inland",
-        "summerTemp": "28–34 °C coast; 22–28 inland",
-        "winterTemp": "5–12 °C coast; colder Pannonian plain",
+        "summerTemp": "28\u201334 \u00b0C coast; 22\u201328 inland",
+        "winterTemp": "5\u201312 \u00b0C coast; colder Pannonian plain",
         "rainfall": "Dry summers on Adriatic; wetter inland and in mountains."
       },
       "food": {
-        "ingredients": ["olive oil", "truffles", "seafood", "pršut", "pag cheese", "wine"],
-        "dishes": ["pašticada", "crni rižot", "peka", "štrukli", "brodet"],
+        "ingredients": [
+          "olive oil",
+          "truffles",
+          "seafood",
+          "pr\u0161ut",
+          "pag cheese",
+          "wine"
+        ],
+        "dishes": [
+          "pa\u0161ticada",
+          "crni ri\u017eot",
+          "peka",
+          "\u0161trukli",
+          "brodet"
+        ],
         "agriculture": "Dalmatian olives and vines; Istrian truffles; island cheeses; Slavonian plains for grains."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "slovenia",
@@ -225,24 +919,87 @@
       "shortName": "Slovenia",
       "color": "#6a9a7a",
       "highlight": "#98c8a8",
-      "bounds": { "minLon": 13.3, "maxLon": 16.6, "minLat": 45.4, "maxLat": 46.9 },
+      "bounds": {
+        "minLon": 13.3,
+        "maxLon": 16.6,
+        "minLat": 45.4,
+        "maxLat": 46.9
+      },
       "outline": [
-        [13.4, 46.0], [13.8, 45.6], [14.5, 45.5], [15.2, 45.6], [15.8, 45.8],
-        [16.3, 46.2], [16.4, 46.6], [15.8, 46.8], [15.0, 46.8], [14.3, 46.6],
-        [13.8, 46.4], [13.4, 46.0]
+        [
+          13.4,
+          46.0
+        ],
+        [
+          13.8,
+          45.6
+        ],
+        [
+          14.5,
+          45.5
+        ],
+        [
+          15.2,
+          45.6
+        ],
+        [
+          15.8,
+          45.8
+        ],
+        [
+          16.3,
+          46.2
+        ],
+        [
+          16.4,
+          46.6
+        ],
+        [
+          15.8,
+          46.8
+        ],
+        [
+          15.0,
+          46.8
+        ],
+        [
+          14.3,
+          46.6
+        ],
+        [
+          13.8,
+          46.4
+        ],
+        [
+          13.4,
+          46.0
+        ]
       ],
-      "extrudeHeight": 0.36,
       "climate": {
         "koppen": "Cfb / Dfb; Alpine influence",
-        "summerTemp": "20–28 °C",
-        "winterTemp": "-5–5 °C; alpine cold",
+        "summerTemp": "20\u201328 \u00b0C",
+        "winterTemp": "-5\u20135 \u00b0C; alpine cold",
         "rainfall": "Wet; Alpine precipitation and snow."
       },
       "food": {
-        "ingredients": ["potatoes", "cabbage", "pork", "wine", "honey", "pumpkins"],
-        "dishes": ["kranjska klobasa", "potica", "žlikrofi", "jota", "prekmurska gibanica"],
+        "ingredients": [
+          "potatoes",
+          "cabbage",
+          "pork",
+          "wine",
+          "honey",
+          "pumpkins"
+        ],
+        "dishes": [
+          "kranjska klobasa",
+          "potica",
+          "\u017elikrofi",
+          "jota",
+          "prekmurska gibanica"
+        ],
         "agriculture": "Alpine dairy, karst wines, pumpkin seed oil, and forest honey."
-      }
+      },
+      "climateBand": "continental"
     },
     {
       "id": "bulgaria",
@@ -250,25 +1007,103 @@
       "shortName": "Bulgaria",
       "color": "#a89868",
       "highlight": "#d0c090",
-      "bounds": { "minLon": 22.3, "maxLon": 28.6, "minLat": 41.2, "maxLat": 44.3 },
+      "bounds": {
+        "minLon": 22.3,
+        "maxLon": 28.6,
+        "minLat": 41.2,
+        "maxLat": 44.3
+      },
       "outline": [
-        [22.4, 43.5], [23.0, 44.0], [24.5, 44.2], [26.0, 44.1], [27.5, 43.8],
-        [28.4, 43.5], [28.3, 42.5], [27.8, 42.0], [27.0, 41.5], [26.0, 41.3],
-        [25.0, 41.4], [24.0, 41.5], [23.0, 41.6], [22.5, 42.0], [22.4, 42.8],
-        [22.4, 43.5]
+        [
+          22.4,
+          43.5
+        ],
+        [
+          23.0,
+          44.0
+        ],
+        [
+          24.5,
+          44.2
+        ],
+        [
+          26.0,
+          44.1
+        ],
+        [
+          27.5,
+          43.8
+        ],
+        [
+          28.4,
+          43.5
+        ],
+        [
+          28.3,
+          42.5
+        ],
+        [
+          27.8,
+          42.0
+        ],
+        [
+          27.0,
+          41.5
+        ],
+        [
+          26.0,
+          41.3
+        ],
+        [
+          25.0,
+          41.4
+        ],
+        [
+          24.0,
+          41.5
+        ],
+        [
+          23.0,
+          41.6
+        ],
+        [
+          22.5,
+          42.0
+        ],
+        [
+          22.4,
+          42.8
+        ],
+        [
+          22.4,
+          43.5
+        ]
       ],
-      "extrudeHeight": 0.30,
       "climate": {
         "koppen": "Cfa / Dfb; Black Sea moderating east",
-        "summerTemp": "25–35 °C",
-        "winterTemp": "-5–5 °C; colder mountains",
+        "summerTemp": "25\u201335 \u00b0C",
+        "winterTemp": "-5\u20135 \u00b0C; colder mountains",
         "rainfall": "Continental pattern; summer thunderstorms; drier Thrace."
       },
       "food": {
-        "ingredients": ["yogurt", "sirene cheese", "peppers", "rose", "wine", "beans"],
-        "dishes": ["shopska salad", "banitsa", "kavarma", "tarator", "kebapche"],
+        "ingredients": [
+          "yogurt",
+          "sirene cheese",
+          "peppers",
+          "rose",
+          "wine",
+          "beans"
+        ],
+        "dishes": [
+          "shopska salad",
+          "banitsa",
+          "kavarma",
+          "tarator",
+          "kebapche"
+        ],
         "agriculture": "Rose Valley, Thracian wines, dairy yogurt tradition, and pepper fields."
-      }
+      },
+      "climateBand": "humid-subtropical"
     },
     {
       "id": "romania",
@@ -276,51 +1111,223 @@
       "shortName": "Romania",
       "color": "#9a7a68",
       "highlight": "#c8a890",
-      "bounds": { "minLon": 20.2, "maxLon": 29.7, "minLat": 43.6, "maxLat": 48.3 },
+      "bounds": {
+        "minLon": 20.2,
+        "maxLon": 29.7,
+        "minLat": 43.6,
+        "maxLat": 48.3
+      },
       "outline": [
-        [20.3, 46.2], [21.5, 47.0], [23.0, 47.8], [24.5, 48.0], [26.0, 48.0],
-        [27.5, 47.5], [28.5, 47.0], [29.5, 46.0], [29.6, 45.0], [29.0, 44.5],
-        [28.5, 44.0], [28.0, 43.7], [27.0, 43.8], [25.5, 43.8], [24.0, 43.9],
-        [22.5, 44.5], [21.5, 45.0], [20.5, 45.5], [20.3, 46.2]
+        [
+          20.3,
+          46.2
+        ],
+        [
+          21.5,
+          47.0
+        ],
+        [
+          23.0,
+          47.8
+        ],
+        [
+          24.5,
+          48.0
+        ],
+        [
+          26.0,
+          48.0
+        ],
+        [
+          27.5,
+          47.5
+        ],
+        [
+          28.5,
+          47.0
+        ],
+        [
+          29.5,
+          46.0
+        ],
+        [
+          29.6,
+          45.0
+        ],
+        [
+          29.0,
+          44.5
+        ],
+        [
+          28.5,
+          44.0
+        ],
+        [
+          28.0,
+          43.7
+        ],
+        [
+          27.0,
+          43.8
+        ],
+        [
+          25.5,
+          43.8
+        ],
+        [
+          24.0,
+          43.9
+        ],
+        [
+          22.5,
+          44.5
+        ],
+        [
+          21.5,
+          45.0
+        ],
+        [
+          20.5,
+          45.5
+        ],
+        [
+          20.3,
+          46.2
+        ]
       ],
-      "extrudeHeight": 0.28,
       "climate": {
         "koppen": "Dfb / Cfb (humid continental)",
-        "summerTemp": "22–32 °C",
-        "winterTemp": "-10–0 °C; Carpathian cold",
+        "summerTemp": "22\u201332 \u00b0C",
+        "winterTemp": "-10\u20130 \u00b0C; Carpathian cold",
         "rainfall": "Moderate; snowy Carpathians; Danube Delta wetlands."
       },
       "food": {
-        "ingredients": ["polenta (mămăligă)", "pork", "cabbage", "sour cream", "sheep cheese", "plums"],
-        "dishes": ["sarmale", "mici", "ciorbă", "mămăligă", "papanasi"],
+        "ingredients": [
+          "polenta (m\u0103m\u0103lig\u0103)",
+          "pork",
+          "cabbage",
+          "sour cream",
+          "sheep cheese",
+          "plums"
+        ],
+        "dishes": [
+          "sarmale",
+          "mici",
+          "ciorb\u0103",
+          "m\u0103m\u0103lig\u0103",
+          "papanasi"
+        ],
         "agriculture": "Carpathian pastures, Danube plains for grain, plum orchards, and Black Sea fish."
-      }
+      },
+      "climateBand": "continental"
     },
     {
       "id": "turkey-aegean",
       "name": "Turkey (Aegean & Marmara)",
-      "shortName": "Turkey · Aegean",
+      "shortName": "Turkey \u00b7 Aegean",
       "color": "#c09060",
       "highlight": "#e8b888",
-      "bounds": { "minLon": 26.0, "maxLon": 30.5, "minLat": 36.5, "maxLat": 41.5 },
+      "bounds": {
+        "minLon": 26.0,
+        "maxLon": 30.5,
+        "minLat": 36.5,
+        "maxLat": 41.5
+      },
       "outline": [
-        [26.2, 40.0], [26.5, 39.5], [27.0, 38.5], [27.5, 37.5], [28.0, 37.0],
-        [28.5, 36.7], [29.5, 36.6], [30.2, 36.8], [30.3, 37.5], [30.0, 38.5],
-        [29.5, 39.5], [29.0, 40.5], [28.5, 41.0], [27.5, 41.2], [26.8, 41.0],
-        [26.3, 40.5], [26.2, 40.0]
+        [
+          26.2,
+          40.0
+        ],
+        [
+          26.5,
+          39.5
+        ],
+        [
+          27.0,
+          38.5
+        ],
+        [
+          27.5,
+          37.5
+        ],
+        [
+          28.0,
+          37.0
+        ],
+        [
+          28.5,
+          36.7
+        ],
+        [
+          29.5,
+          36.6
+        ],
+        [
+          30.2,
+          36.8
+        ],
+        [
+          30.3,
+          37.5
+        ],
+        [
+          30.0,
+          38.5
+        ],
+        [
+          29.5,
+          39.5
+        ],
+        [
+          29.0,
+          40.5
+        ],
+        [
+          28.5,
+          41.0
+        ],
+        [
+          27.5,
+          41.2
+        ],
+        [
+          26.8,
+          41.0
+        ],
+        [
+          26.3,
+          40.5
+        ],
+        [
+          26.2,
+          40.0
+        ]
       ],
-      "extrudeHeight": 0.32,
       "climate": {
         "koppen": "Csa (Mediterranean Aegean); Cfb Marmara",
-        "summerTemp": "28–38 °C Aegean coasts",
-        "winterTemp": "5–15 °C; mild wet winters",
+        "summerTemp": "28\u201338 \u00b0C Aegean coasts",
+        "winterTemp": "5\u201315 \u00b0C; mild wet winters",
         "rainfall": "Winter rains; long dry summers. Olive belt climate."
       },
       "food": {
-        "ingredients": ["olive oil", "eggplant", "yogurt", "lamb", "herbs", "seafood"],
-        "dishes": ["meze", "kebap", "börek", "imam bayıldı", "balık ekmek"],
+        "ingredients": [
+          "olive oil",
+          "eggplant",
+          "yogurt",
+          "lamb",
+          "herbs",
+          "seafood"
+        ],
+        "dishes": [
+          "meze",
+          "kebap",
+          "b\u00f6rek",
+          "imam bay\u0131ld\u0131",
+          "bal\u0131k ekmek"
+        ],
         "agriculture": "Aegean olives and figs, vineyards, greenhouse vegetables, and Marmara seafood."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "italy",
@@ -328,29 +1335,183 @@
       "shortName": "Italy",
       "color": "#a87858",
       "highlight": "#d0a880",
-      "bounds": { "minLon": 6.6, "maxLon": 18.6, "minLat": 36.6, "maxLat": 47.1 },
+      "bounds": {
+        "minLon": 6.6,
+        "maxLon": 18.6,
+        "minLat": 36.6,
+        "maxLat": 47.1
+      },
       "outline": [
-        [7.0, 44.0], [8.0, 44.5], [9.0, 45.5], [10.0, 46.5], [11.5, 46.5],
-        [12.5, 46.0], [13.5, 45.5], [13.8, 45.0], [13.0, 44.0], [12.5, 43.0],
-        [13.0, 42.0], [14.0, 41.0], [15.0, 40.5], [15.5, 40.0], [16.0, 39.5],
-        [16.5, 39.0], [17.0, 40.0], [18.0, 40.5], [18.3, 40.0], [17.5, 39.0],
-        [16.5, 38.5], [16.0, 38.0], [15.5, 38.0], [15.0, 37.5], [15.0, 37.0],
-        [14.0, 37.0], [13.0, 37.5], [12.5, 38.0], [13.0, 39.0], [12.0, 40.0],
-        [11.0, 41.0], [10.0, 42.0], [9.5, 43.0], [8.5, 43.5], [8.0, 44.0],
-        [7.0, 44.0]
+        [
+          7.0,
+          44.0
+        ],
+        [
+          8.0,
+          44.5
+        ],
+        [
+          9.0,
+          45.5
+        ],
+        [
+          10.0,
+          46.5
+        ],
+        [
+          11.5,
+          46.5
+        ],
+        [
+          12.5,
+          46.0
+        ],
+        [
+          13.5,
+          45.5
+        ],
+        [
+          13.8,
+          45.0
+        ],
+        [
+          13.0,
+          44.0
+        ],
+        [
+          12.5,
+          43.0
+        ],
+        [
+          13.0,
+          42.0
+        ],
+        [
+          14.0,
+          41.0
+        ],
+        [
+          15.0,
+          40.5
+        ],
+        [
+          15.5,
+          40.0
+        ],
+        [
+          16.0,
+          39.5
+        ],
+        [
+          16.5,
+          39.0
+        ],
+        [
+          17.0,
+          40.0
+        ],
+        [
+          18.0,
+          40.5
+        ],
+        [
+          18.3,
+          40.0
+        ],
+        [
+          17.5,
+          39.0
+        ],
+        [
+          16.5,
+          38.5
+        ],
+        [
+          16.0,
+          38.0
+        ],
+        [
+          15.5,
+          38.0
+        ],
+        [
+          15.0,
+          37.5
+        ],
+        [
+          15.0,
+          37.0
+        ],
+        [
+          14.0,
+          37.0
+        ],
+        [
+          13.0,
+          37.5
+        ],
+        [
+          12.5,
+          38.0
+        ],
+        [
+          13.0,
+          39.0
+        ],
+        [
+          12.0,
+          40.0
+        ],
+        [
+          11.0,
+          41.0
+        ],
+        [
+          10.0,
+          42.0
+        ],
+        [
+          9.5,
+          43.0
+        ],
+        [
+          8.5,
+          43.5
+        ],
+        [
+          8.0,
+          44.0
+        ],
+        [
+          7.0,
+          44.0
+        ]
       ],
-      "extrudeHeight": 0.35,
       "climate": {
         "koppen": "Csa south; Cfb north; Alpine north",
-        "summerTemp": "25–35 °C; hotter south",
-        "winterTemp": "0–12 °C; Alps much colder",
+        "summerTemp": "25\u201335 \u00b0C; hotter south",
+        "winterTemp": "0\u201312 \u00b0C; Alps much colder",
         "rainfall": "Winter rains Mediterranean south; wetter Po Valley and Alps."
       },
       "food": {
-        "ingredients": ["olive oil", "tomatoes", "wheat", "cheese", "wine grapes", "citrus"],
-        "dishes": ["pasta", "pizza", "risotto", "osso buco", "gelato"],
-        "agriculture": "From Alpine dairy to Sicilian citrus — regional cuisines track climate belts closely."
-      }
+        "ingredients": [
+          "olive oil",
+          "tomatoes",
+          "wheat",
+          "cheese",
+          "wine grapes",
+          "citrus"
+        ],
+        "dishes": [
+          "pasta",
+          "pizza",
+          "risotto",
+          "osso buco",
+          "gelato"
+        ],
+        "agriculture": "From Alpine dairy to Sicilian citrus \u2014 regional cuisines track climate belts closely."
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "cyprus",
@@ -358,99 +1519,367 @@
       "shortName": "Cyprus",
       "color": "#c8a870",
       "highlight": "#f0d0a0",
-      "bounds": { "minLon": 32.2, "maxLon": 34.6, "minLat": 34.5, "maxLat": 35.8 },
+      "bounds": {
+        "minLon": 32.2,
+        "maxLon": 34.6,
+        "minLat": 34.5,
+        "maxLat": 35.8
+      },
       "outline": [
-        [32.3, 35.0], [32.5, 34.7], [33.0, 34.6], [33.5, 34.7], [34.0, 34.9],
-        [34.5, 35.2], [34.4, 35.5], [34.0, 35.6], [33.5, 35.7], [33.0, 35.6],
-        [32.6, 35.3], [32.3, 35.0]
+        [
+          32.3,
+          35.0
+        ],
+        [
+          32.5,
+          34.7
+        ],
+        [
+          33.0,
+          34.6
+        ],
+        [
+          33.5,
+          34.7
+        ],
+        [
+          34.0,
+          34.9
+        ],
+        [
+          34.5,
+          35.2
+        ],
+        [
+          34.4,
+          35.5
+        ],
+        [
+          34.0,
+          35.6
+        ],
+        [
+          33.5,
+          35.7
+        ],
+        [
+          33.0,
+          35.6
+        ],
+        [
+          32.6,
+          35.3
+        ],
+        [
+          32.3,
+          35.0
+        ]
       ],
-      "extrudeHeight": 0.25,
       "climate": {
         "koppen": "Csa (hot-summer Mediterranean)",
-        "summerTemp": "30–40 °C inland; breezier coasts",
-        "winterTemp": "8–17 °C; mild",
+        "summerTemp": "30\u201340 \u00b0C inland; breezier coasts",
+        "winterTemp": "8\u201317 \u00b0C; mild",
         "rainfall": "Winter rains; arid summers. Mountains catch more moisture."
       },
       "food": {
-        "ingredients": ["halloumi", "olive oil", "coriander", "lamb", "citrus", "wine"],
-        "dishes": ["halloumi", "souvlaki", "meze", "kleftiko", "commandaria"],
+        "ingredients": [
+          "halloumi",
+          "olive oil",
+          "coriander",
+          "lamb",
+          "citrus",
+          "wine"
+        ],
+        "dishes": [
+          "halloumi",
+          "souvlaki",
+          "meze",
+          "kleftiko",
+          "commandaria"
+        ],
         "agriculture": "Halloumi dairy, carob, citrus, and ancient wine terraces."
-      }
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "spain-east",
       "name": "Spain (East / Mediterranean)",
-      "shortName": "Spain · Med",
+      "shortName": "Spain \u00b7 Med",
       "color": "#b88858",
       "highlight": "#e0b080",
-      "bounds": { "minLon": -1.0, "maxLon": 3.5, "minLat": 36.5, "maxLat": 42.5 },
+      "bounds": {
+        "minLon": -1.0,
+        "maxLon": 3.5,
+        "minLat": 36.5,
+        "maxLat": 42.5
+      },
       "outline": [
-        [-0.5, 41.5], [0.5, 41.8], [1.5, 42.0], [2.5, 42.2], [3.2, 41.8],
-        [3.0, 40.5], [2.5, 39.5], [1.5, 38.5], [0.5, 37.5], [-0.2, 37.0],
-        [-0.8, 37.5], [-0.5, 39.0], [-0.5, 41.5]
+        [
+          -0.5,
+          41.5
+        ],
+        [
+          0.5,
+          41.8
+        ],
+        [
+          1.5,
+          42.0
+        ],
+        [
+          2.5,
+          42.2
+        ],
+        [
+          3.2,
+          41.8
+        ],
+        [
+          3.0,
+          40.5
+        ],
+        [
+          2.5,
+          39.5
+        ],
+        [
+          1.5,
+          38.5
+        ],
+        [
+          0.5,
+          37.5
+        ],
+        [
+          -0.2,
+          37.0
+        ],
+        [
+          -0.8,
+          37.5
+        ],
+        [
+          -0.5,
+          39.0
+        ],
+        [
+          -0.5,
+          41.5
+        ]
       ],
-      "extrudeHeight": 0.30,
       "climate": {
         "koppen": "Csa / BSk (Mediterranean / semi-arid)",
-        "summerTemp": "28–38 °C",
-        "winterTemp": "8–15 °C",
+        "summerTemp": "28\u201338 \u00b0C",
+        "winterTemp": "8\u201315 \u00b0C",
         "rainfall": "Low to moderate; dry summers; irrigation-dependent inland."
       },
       "food": {
-        "ingredients": ["olive oil", "rice", "saffron", "seafood", "citrus", "almonds"],
-        "dishes": ["paella", "gazpacho", "jamón", "tortilla", "escalivada"],
+        "ingredients": [
+          "olive oil",
+          "rice",
+          "saffron",
+          "seafood",
+          "citrus",
+          "almonds"
+        ],
+        "dishes": [
+          "paella",
+          "gazpacho",
+          "jam\u00f3n",
+          "tortilla",
+          "escalivada"
+        ],
         "agriculture": "Olive and citrus belts, Valencian rice, and Mediterranean market gardens."
-      }
+      },
+      "climateBand": "semi-arid"
     },
     {
       "id": "france-south",
       "name": "France (South / Provence)",
-      "shortName": "France · South",
+      "shortName": "France \u00b7 South",
       "color": "#8a7a98",
       "highlight": "#b8a8c8",
-      "bounds": { "minLon": 3.0, "maxLon": 7.8, "minLat": 42.5, "maxLat": 45.5 },
+      "bounds": {
+        "minLon": 3.0,
+        "maxLon": 7.8,
+        "minLat": 42.5,
+        "maxLat": 45.5
+      },
       "outline": [
-        [3.2, 43.5], [4.0, 43.2], [5.0, 43.2], [6.0, 43.3], [7.0, 43.7],
-        [7.5, 44.5], [7.0, 45.2], [6.0, 45.3], [5.0, 45.0], [4.0, 44.5],
-        [3.5, 44.0], [3.2, 43.5]
+        [
+          3.2,
+          43.5
+        ],
+        [
+          4.0,
+          43.2
+        ],
+        [
+          5.0,
+          43.2
+        ],
+        [
+          6.0,
+          43.3
+        ],
+        [
+          7.0,
+          43.7
+        ],
+        [
+          7.5,
+          44.5
+        ],
+        [
+          7.0,
+          45.2
+        ],
+        [
+          6.0,
+          45.3
+        ],
+        [
+          5.0,
+          45.0
+        ],
+        [
+          4.0,
+          44.5
+        ],
+        [
+          3.5,
+          44.0
+        ],
+        [
+          3.2,
+          43.5
+        ]
       ],
-      "extrudeHeight": 0.32,
       "climate": {
         "koppen": "Csa / Cfb (Mediterranean Provence)",
-        "summerTemp": "25–35 °C",
-        "winterTemp": "5–12 °C; mistral winds",
+        "summerTemp": "25\u201335 \u00b0C",
+        "winterTemp": "5\u201312 \u00b0C; mistral winds",
         "rainfall": "Dry summers; autumn/spring rains; lavender plateau climate."
       },
       "food": {
-        "ingredients": ["olive oil", "herbs de Provence", "garlic", "wine", "tomatoes", "seafood"],
-        "dishes": ["bouillabaisse", "ratatouille", "salade niçoise", "pissaladière", "aioli"],
-        "agriculture": "Vines, olives, lavender, and coastal fish — classic Provençal terroir."
-      }
+        "ingredients": [
+          "olive oil",
+          "herbs de Provence",
+          "garlic",
+          "wine",
+          "tomatoes",
+          "seafood"
+        ],
+        "dishes": [
+          "bouillabaisse",
+          "ratatouille",
+          "salade ni\u00e7oise",
+          "pissaladi\u00e8re",
+          "aioli"
+        ],
+        "agriculture": "Vines, olives, lavender, and coastal fish \u2014 classic Proven\u00e7al terroir."
+      },
+      "climateBand": "mediterranean"
     },
     {
       "id": "maghreb-north",
       "name": "Maghreb (North coast)",
-      "shortName": "Maghreb · North",
+      "shortName": "Maghreb \u00b7 North",
       "color": "#a89070",
       "highlight": "#d0b898",
-      "bounds": { "minLon": -2.0, "maxLon": 11.0, "minLat": 35.0, "maxLat": 37.5 },
+      "bounds": {
+        "minLon": -2.0,
+        "maxLon": 11.0,
+        "minLat": 35.0,
+        "maxLat": 37.5
+      },
       "outline": [
-        [-1.5, 35.5], [0.0, 36.0], [2.0, 36.5], [4.0, 36.8], [6.0, 37.0],
-        [8.0, 37.2], [10.0, 37.0], [10.5, 36.5], [9.0, 36.0], [7.0, 35.8],
-        [5.0, 35.5], [3.0, 35.3], [1.0, 35.2], [-1.0, 35.3], [-1.5, 35.5]
+        [
+          -1.5,
+          35.5
+        ],
+        [
+          0.0,
+          36.0
+        ],
+        [
+          2.0,
+          36.5
+        ],
+        [
+          4.0,
+          36.8
+        ],
+        [
+          6.0,
+          37.0
+        ],
+        [
+          8.0,
+          37.2
+        ],
+        [
+          10.0,
+          37.0
+        ],
+        [
+          10.5,
+          36.5
+        ],
+        [
+          9.0,
+          36.0
+        ],
+        [
+          7.0,
+          35.8
+        ],
+        [
+          5.0,
+          35.5
+        ],
+        [
+          3.0,
+          35.3
+        ],
+        [
+          1.0,
+          35.2
+        ],
+        [
+          -1.0,
+          35.3
+        ],
+        [
+          -1.5,
+          35.5
+        ]
       ],
-      "extrudeHeight": 0.28,
       "climate": {
         "koppen": "Csa / BSk (Mediterranean / steppe)",
-        "summerTemp": "28–38 °C",
-        "winterTemp": "8–16 °C",
+        "summerTemp": "28\u201338 \u00b0C",
+        "winterTemp": "8\u201316 \u00b0C",
         "rainfall": "Winter rains on coast; arid inland quickly."
       },
       "food": {
-        "ingredients": ["couscous wheat", "olive oil", "harissa", "dates", "lamb", "citrus"],
-        "dishes": ["couscous", "tagine", "harira", "mechoui", "brik"],
+        "ingredients": [
+          "couscous wheat",
+          "olive oil",
+          "harissa",
+          "dates",
+          "lamb",
+          "citrus"
+        ],
+        "dishes": [
+          "couscous",
+          "tagine",
+          "harira",
+          "mechoui",
+          "brik"
+        ],
         "agriculture": "Coastal olives and citrus; Atlas foothills for grains; Maghrebi spice traditions."
-      }
+      },
+      "climateBand": "semi-arid"
     }
   ]
 }
