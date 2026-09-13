@@ -9,3 +9,9 @@ dist/
 *.local
 .env
 .env.*
+
+# ensure-git
+.venv/
+
+# ensure-git
+__pycache__/
